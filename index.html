@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>SuDoKu</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+<body onload = "createSudoku()">
+    <div id="wrapper">
+    <!-- start wrapper-->
+        <header>
+            <h1>SuDoKu</h1>
+        </header>
+        <section class="content">
+            <div id = "sudokuBoard">
+                <section>
+                    <table id = "sudokuTable">
+                    </table>
+                </section>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <div id = "timer">00:00</div>
+            <button onclick="fillBoard(); startClock();">New Game</button></br>
+            <button id = "done" type = "submit" onclick = "checkBoard()">Done!</button></br>
+            <h2>Rules</h2>
+            <p>The Classic Sudoku is a number placing puzzle based on a 9x9 grid with several given numbers. The object is to place the numbers 1 to 9 in the empty squares so that each row, each column and each 3x3 box contains the same number only once.</p>
+            <p>Rules are from <a href="http://www.conceptispuzzles.com/?uri=puzzle/sudoku/rules" target="_blank"> Conceptis Puzzles</a></p>
+        </aside>
+    <!-- end wrapper -->
+    </div>
+    <footer>Copyright @ 2021 | Preeti </footer>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
